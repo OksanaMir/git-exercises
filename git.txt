@@ -1,0 +1,133 @@
+Git Exercises(bash)
+
+1. Setting Up Git
+
+Objective: Set up Git with user information.
+Exercise:
+
+=============== in bash terminal ======================
+
+# Set your name
+git config --global user.name "Your Name"
+
+# Set your email
+git config --global user.email "you@example.com"
+
+
+$ git config --global user.name "Jméno Příjmení"
+$ git config --global user.email "muj-email@example.com"
+$ git config --global core.editor "code --wait"
+====================== end ============================
+
+
+2. Initializing a Git Repository
+
+Objective: Initialize a new Git repository.
+Exercise:
+
+=============== in bash terminal ======================
+
+# Navigate to your project directory
+cd MyProjects
+
+# Initialize a Git repository
+git init
+
+# Verify the repository has been initialized
+ls -a
+====================== end ============================
+
+3. Adding and Committing Files
+Objective: Learn to add files to the staging area and commit them.
+Exercise:
+
+=============== in bash terminal ======================
+
+# Create a file and write some text into it
+echo "My first project!" > project.txt
+
+# Add the file to the staging area
+git add project.txt
+
+/* $ git add . => $ git push */
+
+# Commit the changes with a message
+git commit -m "Add project file"
+
+====================== end ============================
+
+4. Checking the Status
+
+Objective: Check the status of the repository.
+Exercise:
+
+=============== in bash terminal ======================
+
+# Check the status of the repository
+git status
+
+# Modify the file
+echo "Adding more content!" >> project.txt
+
+# Check the status again
+git status
+====================== end ============================
+
+5. Viewing the Commit History
+
+Objective: View the commit history.
+Exercise:
+
+=============== in bash terminal ======================
+
+# View the commit history
+git log
+====================== end ============================
+
+6. Creating and Switching Branches
+
+Objective: Create and switch to a new branch.
+Exercise:
+
+=============== in bash terminal ======================
+
+# Create a new branch called 'feature-branch'
+git branch feature-branch
+
+# Switch to the new branch
+git checkout feature-branch
+
+# Verify the current branch
+git branch
+====================== end ============================
+
+7. Merging Branches
+
+Objective: Merge changes from one branch into another.
+Exercise:
+
+=============== in bash terminal ======================
+
+# Switch back to the main branch
+git checkout main
+
+# Merge the 'feature-branch' into 'main'
+git merge feature-branch
+====================== end ============================
+
+8. Viewing Differences
+
+Objective: View changes between commits.
+Exercise:
+
+=============== in bash terminal ======================
+
+# Create another commit with some changes
+echo "More changes!" >> project.txt
+git add project.txt
+git commit -m "Update project file"
+
+# View differences between the last two commits
+git diff HEAD~1 HEAD
+
+====================== end ============================

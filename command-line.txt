@@ -1,0 +1,102 @@
+Command Line Exercises(bash)
+
+1. Navigating Directories
+
+Objective: Learn how to move between directories.
+Exercise:
+
+=============== in bash terminal ======================
+
+# List the contents of the current directory
+ls
+
+# Navigate to the 'Documents' directory
+cd Documents
+
+# Go back to the previous directory
+cd ..
+====================== end ============================
+
+
+2. Creating and Deleting Directories
+
+Objective: Learn to create and remove directories.
+Exercise:
+
+=============== in bash terminal ======================
+
+# Create a new directory called 'MyProjects'
+mkdir MyProjects
+
+# Navigate into the 'MyProjects' directory
+cd MyProjects
+
+# Create another directory inside 'MyProjects' called 'Project1'
+mkdir Project1
+
+# Remove the 'Project1' directory
+rmdir Project1
+
+# Go back to the parent directory and remove 'MyProjects'
+cd ..
+rmdir MyProjects
+========================= end ==============================
+
+
+3. Creating and Viewing Files
+
+Objective: Learn to create, view, and delete files.
+Exercise:
+
+=============== in bash terminal ======================
+
+# Create a new file called 'hello.txt'
+touch hello.txt
+
+# Write text into 'hello.txt'
+echo "Hello, World!" > hello.txt
+
+# View the contents of 'hello.txt'
+cat hello.txt
+
+# Delete the 'hello.txt' file
+rm hello.txt 
+========================== end ==============================
+
+4. Copying and Moving Files
+
+Objective: Learn to copy and move files.
+Exercise:
+
+=============== in bash terminal ======================
+
+# Create a file and write some text into it
+echo "Learning is fun!" > fun.txt
+
+# Copy 'fun.txt' to 'fun_copy.txt'
+cp fun.txt fun_copy.txt
+
+# Move 'fun_copy.txt' to a new file called 'learning.txt'
+mv fun_copy.txt learning.txt
+
+# Delete both files
+rm fun.txt learning.txt
+========================= end =============================
+
+
+5. Using Wildcards
+
+Objective: Learn to use wildcards for batch operations.
+Exercise:
+
+=============== in bash terminal ======================
+
+# Create multiple files
+touch file1.txt file2.txt file3.txt
+
+# List all files that start with 'file'
+ls file*
+
+# Delete all files that start with 'file'
+rm file*
+========================= end =============================
